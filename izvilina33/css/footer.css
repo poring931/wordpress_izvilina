@@ -1,0 +1,293 @@
+/*  УТАЛИЩ В ОСНОВНОЙ ФАЙЛ
+footer.container#colophon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Trebuchetms';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.footer_menu a{
+    display: block;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 16px;
+    opacity: 0.8;
+    
+}
+.footer_menu a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.8);
+}
+.footer_menu a.active{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.footer__copyright{
+    font-size: 14px;
+    line-height: 16.26px;
+    opacity: 0.8;
+}
+.footer_table .header_socials{
+    display: flex;
+    flex-direction: column;
+}
+.footer_callback{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.impulse-guru{
+    opacity: 0.8;
+    margin-bottom: 40px;
+    transition: 0.1s all ease;
+}
+.impulse-guru:hover{
+    opacity: 1;
+}
+.footer_callback .btn img{
+    right: -25px;
+    left: auto;
+    top: -40px
+}
+.footer-menu{
+    list-style: none;
+}
+form.poboltaem{
+    display: block;
+    background: linear-gradient(116.32deg, #E3253B 3.85%, #C52121 105.48%);
+    box-shadow: 0px 4px 8px 1px rgba(0, 20, 14, 0.25);
+    border-radius: 30px;
+    padding: 67px 100px 46px 60px;
+    margin-bottom: 80px;
+    position: relative;
+}
+p.poboltaem__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 76px;
+    line-height: 106.11%;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+p.poboltaem__text{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    font-family: "trebuchetms";
+    opacity: 0.8;
+    letter-spacing: 0.035em;
+    display: block;
+    padding-left: 12px;
+    margin-bottom: 50px;
+}
+.poboltaem__textarea{
+    resize: none;
+    padding: 22px 34px;
+    font-family: inherit;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    margin-bottom: 17px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    outline: none;
+    height: 105px;
+}
+.poboltaem__blocks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 61px;
+}
+.poboltaem__block{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+.block__text{
+    font-size: 15px;
+    line-height: 18.58px;
+    opacity: 0.8;
+}
+.poboltaem__textarea,
+.poboltaem__input{
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 22px 21px;
+    font-family: inherit;
+    font-size: 20px;
+    outline: none;
+    width: 100%;
+}
+.poboltaem__textarea:focus,
+.poboltaem__input:focus{
+    color: black;
+}
+
+.poboltaem__mail-img{
+    position: absolute;
+    right: 60px;
+    top: -104px;
+}
+.poboltaem__phone-img{
+    position: absolute;
+    bottom: -57px;
+    right: 232px;
+}
+.poboltaem__politika{
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.8);
+}
+.poboltaem__politika:hover{
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
+.poboltaem__block.left{
+    width: 43%;
+}
+.poboltaem__block.right{
+    width: 56%;
+}
+.poboltaem__vvod{
+    position: relative;
+    margin-bottom: 25px;
+}
+.poboltaem__placeholder{
+    position: absolute;
+    top: 70%;
+    left: 21px;
+    color: black;
+    font-size: 10px;
+    opacity: 0;
+    transition: 0.2s all ease;
+    pointer-events: none;
+    cursor: unset;
+}
+.poboltaem__textarea{
+    opacity: 1;
+    color: black;	
+}
+.poboltaem__textarea::placeholder,
+.poboltaem__input::placeholder{
+    font-size: 20px;
+    color: #000000;
+    opacity: 0.24;
+    transition: 0.2s all ease;
+}
+.poboltaem__vvod.error .poboltaem__placeholder{
+    display: block;
+    color: #E33232;
+    opacity: 1;
+}
+.poboltaem__vvod.error .poboltaem__placeholder{
+    display: block;
+    color: #E33232;
+    opacity: 1;
+}
+.poboltaem__vvod.error .poboltaem__textarea + .poboltaem__placeholder{
+    display: block;
+    color: #E33232;
+    opacity: 1;
+    transform: translateY(-33px);
+}
+.poboltaem__vvod.error .poboltaem__input{
+    color: #E33232;
+}
+.poboltaem__vvod.error .poboltaem__textarea::placeholder,
+.poboltaem__vvod.error .poboltaem__input::placeholder{
+    transform: translateY(-11px);
+    color: #E33232;
+    opacity: 1;
+}
+.modal{
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+    
+}
+.modal.active{
+    position: fixed;
+    top: 0px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    z-index: 10000;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal.active .modal__content{
+    margin: 0 auto;
+    width: 300px;
+    height: 150px;
+    background: linear-gradient(116.32deg, #E3253B 3.85%, #C52121 105.48%);
+    box-shadow: 0px 4px 8px 1px rgba(0, 20, 14, 0.25);
+    border-radius: 30px;
+    padding: 20px ;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.4s all ease;
+}
+
+.modal__content p{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.modal__close {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.modal__close:hover {
+    opacity: 0.8;
+}
+.modal__close:before, .modal__close:after {
+    position: absolute;
+    left: 7.5px;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color: #fff;
+}
+.modal__close:before {
+    transform: rotate(45deg);
+}
+.modal__close:after {
+    transform: rotate(-45deg);
+}
+.btn.poboltaem__submit{
+    padding: 16px 81px;
+    font-size: 20px;
+    margin-top: 25px;
+    background: transparent;
+}
+a.poboltaem__submit:hover{
+    box-shadow: 0px 4px 5px 1px rgba(43, 42, 41, 0.8);
+}
+a.poboltaem__submit:active{
+    box-shadow: inset 0px 4px 10px rgba(43, 42, 41, 0.5);
+}
+#form-text{
+    margin-bottom: 5px;
+} */

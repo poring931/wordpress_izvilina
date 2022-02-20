@@ -1,0 +1,287 @@
+.under-title {
+    font-size: 60px;
+    line-height: 106.11%;
+    /* identical to box height, or 64px */
+
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+h1 {
+    line-height: 1;
+}
+
+.category-title {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.filter_blog-title {
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+
+    opacity: 0.8;
+}
+
+.category-title_block {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
+
+.filter_blog-title {
+    word-break: break-all;
+}
+
+.categories_list {
+    max-width: 500px;
+    display: flex;
+    margin-top: 34px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category_item {
+    cursor: pointer;
+    user-select: none;
+    border: 1.01269px solid #FFFFFF;
+    border-radius: 30px;
+    padding: 11px 35px 11px 24px;
+    display: flex;
+    align-content: center;
+    gap: 15px;
+    align-items: center;
+    transition: 0.3s linear;
+    position: relative;
+}
+
+.category_item[disabled] {
+    opacity: 0.4;
+}
+
+.category_item-close {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+.category_item.active {
+    background: #FFFFFF;
+    color: #025239;
+}
+
+.inner_cats_list {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px 44px;
+    position: relative;
+}
+
+.inner_cats-item_img img {
+    border-radius: 13.8607px;
+    transition: 0.3s ease;
+}
+
+.inner_cats-item_img {
+    filter: drop-shadow(0px 4px 4px rgba(43, 42, 41, 0.25));
+
+    overflow: hidden;
+    border-radius: 13.8607px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inner_cats-item:hover {
+    z-index: 2;
+}
+
+.inner_cats-item:hover .inner_cats-item_img img {
+    transform: scale(1.05);
+}
+
+.inner_cats-item-preview {
+    word-break: break-word;
+    font-size: 16px;
+
+    opacity: 0.8;
+}
+
+.inner_cats-item_text {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.inner_cats-item_text .btn {
+    padding: 20px 65px
+}
+
+.inner_cats-item_name {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.inner_cats-item-parents_list {
+    margin: 16px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.inner_cats-item-parent {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-size: 20px;
+    gap: 8px;
+}
+
+
+
+.category main a:not(.btn) {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.category main a:not(.btn):before {
+    content: '';
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.363);
+    position: absolute;
+    transition: 0.25s ease;
+}
+
+.category main a:hover:before {
+    width: 100%;
+}
+
+.filter_not_found {
+    font-size: 24px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+#filter {
+    display: none;
+}
+
+
+.cats_list_getmore_back {
+    background: linear-gradient(180deg, rgba(2, 82, 57, 0) 0%, #025239 66.67%);
+    height: 403px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    top: -66px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.cats_list_getmore img {
+    left: unset;
+    right: -16px;
+    top: -36px;
+}
+
+.relative_block_ {
+    position: relative;
+    width: 100%;
+    margin-bottom: 290px;
+}
+
+@media (max-width:950px) {
+    .category-title_block {
+        grid-template-columns: 1fr;
+    }
+
+    .categories_list {
+        max-width: unset;
+    }
+
+    .inner_cats-item_text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inner_cats-item-parents_list {
+
+        gap: 15px 30px;
+    }
+
+    .inner_cats-item-parent {
+
+        font-size: 17px;
+    }
+
+    .inner_cats-item_name {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:620px) {
+    .inner_cats_list {
+        grid-template-columns: 1fr;
+    }
+
+    .inner_cats-item-parents_list {
+        margin: 25px 0;
+    }
+
+    .inner_cats-item_text .btn {
+        padding: 10px 51px;
+    }
+
+    .category-title img {
+        max-width: 60px;
+    }
+
+    .under-title {
+        font-size: 12vw;
+
+    }
+
+    .category_item-icon {
+        max-width: 20px;
+    }
+
+    .category_item {
+
+        padding: 6px 27px 6px 7px;
+
+        gap: 5px;
+
+        font-size: 12px;
+    }
+
+    .inner_cats_list {
+        margin-top: 80px;
+    }
+
+    .category_item-close img {
+        max-width: 10px;
+    }
+
+}
